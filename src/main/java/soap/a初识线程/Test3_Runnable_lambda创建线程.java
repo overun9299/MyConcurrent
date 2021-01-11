@@ -17,7 +17,9 @@ public class Test3_Runnable_lambda创建线程 {
             log.debug("running");
         };
 
-        Thread t1 = new Thread(runnable , "t1");
+        Thread t1 = new Thread(() -> {
+            log.debug("running");
+        } , "t1");
 
         t1.start();
 

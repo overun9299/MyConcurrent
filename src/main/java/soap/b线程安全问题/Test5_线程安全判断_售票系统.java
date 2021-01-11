@@ -46,7 +46,7 @@ public class Test5_线程安全判断_售票系统 {
     // Random 为线程安全
     static Random random = new Random();
 
-    // 随机 1~5
+    // 随机1~amount
     public static int random(int amount) {
         return random.nextInt(amount) + 1;
     }
